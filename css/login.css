@@ -1,0 +1,406 @@
+/*全局设置*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing:border-box;
+}
+a{
+	text-decoration: none;
+	color: #757575;
+}
+ul{
+	list-style: none;
+}
+.clear{
+	clear: both;
+	content: ".";
+	height: 0px;
+	display: block;
+	visibility: hidden;
+}
+html{
+	font-size: 62.5%;
+}
+body{
+	background: #f5f5f5;
+}
+
+
+
+.box{
+
+	/*z-index: 10;*/
+	/*display: none;*/
+	max-width: 865px;
+	height: 620px;
+	margin: 0 auto;
+	background: #f5f5f5;
+
+	margin-top: 4.5rem;
+	background: white;
+
+	/*配合二维码*/
+	position: relative;
+
+}
+/*二维码*/
+.box .ewm{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 10px;
+	right:10px;
+	background: url(../img/milogin.png) no-repeat left -6px top -70px;
+	cursor: pointer;	
+}
+.box .ewm:hover{
+	background: url(../img/milogin.png) no-repeat left -112px top -71px;
+}
+
+.box .main{
+	width: 356px;
+	/*height: 550px;*/
+	padding-top: 50px;
+	margin: 0 auto;
+	/*border: 1px solid red;*/
+}
+/*log*/
+.box .main .log{
+	width: 50px;
+	height: 50px;
+	background: url(../img/log.jpg);
+	margin: 0 auto;
+}
+.box .main>span{
+	width: 100%;
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+	margin-top: 28px;
+	font-size: 28px;
+}
+.box .main input{
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	height: 50px;
+	margin-top: 20px;
+}
+/*邮箱/手机号/账号*/
+.main input:first-of-type{
+	margin-bottom: 15px;
+}
+/* 更改 外边框*/
+/*.main #user{
+	outline-color: orange;
+}*/
+/*.main #user{
+	border-width: 5px;
+	border-color: orange;
+}*/
+
+
+/* 提示 */
+.box #ts{
+	width: 100%;
+	height: 20px;
+	margin-top: 20px;
+	display: none;
+
+
+}
+/*.box #ts img{
+	float: left;
+	width: 20px;
+	height: 20px;
+	
+}*/
+.box #ts #ts_span{
+	color: #ef5b00;
+	text-align: left;
+	text-indent: 35px;
+	float: left;
+	height: 100%;
+	width: 100%;
+	background: url(../img/jth.jpg) no-repeat left top 3px;
+	background-size: 5% 80%;
+
+	/*border:1px solid red;*/
+
+}
+/*.box #ts #ts_span:before{
+	content: url(../img/jth.jpg);
+}*/
+
+
+/*立即登录*/
+.box .main .login{
+	width: 360px;
+	height: 50px;
+	margin-top: 30px;
+	/*background: url(../img/login.jpg) no-repeat ;*/
+	background: #ef5b00;
+	color: white;
+	font-size: 1.3rem;
+
+	text-align: center;
+	line-height: 50px;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+/*line*/
+.box .main .line{
+	margin: 20px auto;
+	width: 360px;
+	background: #e0e0e0;
+	height: 1px;
+
+	position: relative;
+}
+.box .main .line>div{
+	min-width: 100%;
+	background: transparent;
+	position: absolute;
+	top:-8px;
+	font-size: 1.3rem;
+	/*left: 25%;*/
+	/*background: red;*/
+	text-align: center;
+}
+.box .main .line div span{
+	background: white;
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+
+	
+	font-size: 1.3rem;
+	/*字体 颜色*/
+	color: #e0e0e0;
+
+}
+
+/*登录 方式*/
+.box .main #third{
+	width: 150px;
+	height: 30px;
+	margin: 0 auto;
+	margin-top: 50px;
+	text-align: center;
+	/*margin-bottom: 20px;*/
+	/*background: red;*/
+
+
+}
+.box .main #third li{
+	float: left;
+	height: 30px;
+	line-height: 30px;
+	margin: 0 10px;
+	width: 30px;
+	
+}
+
+.box .main ul li:first-child{
+	background-size: 30px 30px;
+	background: url(../img/milogin.png) no-repeat left 0px top -3px;
+	/*background: yellow;*/
+}
+.box .main ul li:first-child:hover{
+	background-size: 30px 30px;
+	background: url(../img/milogin.png) no-repeat left -6px top -158px;
+}
+
+.box .main ul li:nth-child(2){
+	background-size: 30px 30px;
+	background: url(../img/milogin.png) no-repeat left -54px top -2px;
+}
+.box .main ul li:nth-child(2):hover{
+	background-size: 30px 30px;
+	background: url(../img/milogin.png) no-repeat left -65px top -158px;
+}
+.box .main ul li:nth-child(3){
+	background-size: 30px 30px;
+	background: url(../img/milogin.png) no-repeat left -106px top 0px;
+}
+.box .main ul li:nth-child(3):hover{
+	background-size: 30px 30px;
+	background: url(../img/milogin.png) no-repeat left -118px top -159px;
+}
+
+
+
+
+/*注册小米账号   忘记密码*/
+.box .registAndforget{
+	width: 100%;
+	height: 16px;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 50px;
+	font-size: 16px;
+}
+.box .registAndforget a{
+	margin: 0 10px;
+}
+.box .registAndforget a:hover{
+	color: #ef5b00;
+}
+.box .registAndforget a:first-child :after{
+	content: url(img/line.jpg) left center;
+}
+
+/*==============================================*/
+/*==============================================*/
+/* 第二套  */
+.box2 {
+	display: none;
+	width: 865px;
+	height: 620px;
+	margin: 0 auto;
+	background: #f5f5f5;
+
+	margin-top: 4.5rem;
+	background: white;
+
+	/*配合二维码*/
+	position: relative;
+}
+/* 二维码  */
+
+.box2 .close{
+	width: 30px;
+	height: 30px;
+	background: url(../img/close.png);
+	position: absolute;
+	top: 10px;
+	right:10px;
+	cursor: pointer;
+}
+
+.box2 .main{
+	width: 510px;
+	height: 510px;
+	padding-top: 100px;
+	margin: 0 auto;
+	/*border: 1px solid red;*/
+
+}
+.box2 .title{
+	font-size: 25px;
+	font-weight: bold;
+	color: orange;
+	/*width: 356px;*/
+	width: 100%;
+	/*display: block;*/
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.box2 .deta{
+	/*display: block;*/
+	/*width: 356px;*/
+	width: 100%;
+	color: #757575;
+	font-size: 13px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.box2 .sys{
+	/*float: left;*/
+	/*width: 100%;
+	height: 100%;*/
+	/*border: 5px solid red;*/
+	/*background: green;*/
+	background-color: red;
+	background-image: url(../img/ewm.png);
+	/*border: 2px solid red;*/
+	width: 266px;
+	height: 266px;
+	margin: 0 auto;	
+	margin-top: 20px;
+}
+
+
+
+
+
+/*========================*/
+/*========================*/
+
+
+/*footer*/
+footer{
+	width: 100%;
+	height: 77px;
+	/*margin-top: 60px;*/
+	/*margin-bottom: 0px;*/
+
+	bottom: 0px;
+	left: 50%-433px;
+
+	/*background: red;*/
+
+	text-align: center;
+
+	font-size: 2rem;
+}
+footer>div a{
+	display: inline-block;
+	margin-right: 10px;
+	padding-right: 10px;
+	background: url(../img/line.jpg) right center no-repeat;
+}
+/*footer>div a:after{
+	content: url(../img/line.jpg) ;
+}*/
+/*footer ul*/
+/*footer ul{
+	margin: 0 auto;
+	width: 100%;
+	height: 30px;
+	text-align: center;
+	
+	background: yellow;
+}*/
+/*footer ul li*/
+/*footer ul li{
+	float: left;
+	text-align: center;
+	padding-right: 15px;
+	line-height: 15px;
+}
+footer ul li a{
+	font-size: 15px;
+}
+footer ul li:after{
+	content: url(../img/line.jpg) ;
+}
+footer ul li:last-child:after{
+	content: none;
+}*/
+
+
+
+footer .bottom{	
+
+	margin: 10px auto;
+	width: 100%;
+	height: 40px;
+	text-align: center;
+	/*background: green;*/
+	/*border: 1px solid black;*/
+	font-size: 10px;
+	color: #757575;
+}
+
+footer .bottom>span{
+	display: inline-block;
+	width: 25px;
+	height: 30px;
+	background-size: 25px 30px;
+	background: url(../img/police.jpg) no-repeat left 2px center;
+}
+
+
