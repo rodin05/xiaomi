@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+	<title>小米账号-登录</title>
+	<meta charset = "utf-8"/>
+	<!-- <meta http-equiv = "refresh" content = "1"/> -->
+	<link rel = "shortcut icon" href = "img/log.icon"/>
+
+
+	<link rel="stylesheet" type="text/css" href="css/login.css">	
+
+	<!-- js -->
+	<script type="text/javascript" src = "js/jquery-2.2.3.js"></script>
+	
+	
+
+	
+
+</head>
+<body>
+
+	<div class = "box" id= "box">
+		<div class = "ewm" id = "ewm"></div>
+		<!-- main部分 -->
+		<div class = "main">
+			<div class = "clear"></div>
+			<div class = "log"></div>
+			<span>小米账号登录</span>
+			<input id = "user" type = "text" placeholder = "邮箱/手机号/小米账号">
+			<input id = "pwd" type = "password" placeholder = "密码"/>
+			<div id = "ts">
+				<!-- <img src="img/jth.jpg"> -->
+				<div id = "ts_span"></div>
+			</div>
+			<!-- 立即登录 -->
+			<div class = "login" id = "login">立即登录</div>
+			<!-- 其他方式登录 -->
+			<div class = "line">
+				<div>
+					其他方式登录
+				</div>
+			</div>
+			<!-- QQ  WB  ZFB -->
+			<ul id = "third">
+				<li id = "QQ"></li>
+				<li id = "WB"></li>
+				<li id = "ZFB"></li>
+			</ul>
+		</div>
+
+		<!-- 注册小米账号 | 忘记密码? -->
+		<div class = "registAndforget">
+			<a href="https://account.xiaomi.com/pass/register?callback=http%3A%2F%2Forder.mi.com%2Flogin%2Fcallback%3Ffollowup%3Dhttp%253A%252F%252Fwww.mi.com%252Findex.html%26sign%3DNDRhYjQwYmNlZTg2ZGJhZjI0MTJjY2ZiMTNiZWExODMwYjkwNzg2ZQ%2C%2C&sid=mi_eshop">注册小米账号</a>
+
+			<a href="https://account.xiaomi.com/pass/forgetPassword?callback=http%3A%2F%2Forder.mi.com%2Flogin%2Fcallback%3Ffollowup%3Dhttp%253A%252F%252Fwww.mi.com%252Findex.html%26sign%3DNDRhYjQwYmNlZTg2ZGJhZjI0MTJjY2ZiMTNiZWExODMwYjkwNzg2ZQ%2C%2C&sid=mi_eshop">忘记密码?</a>
+		</div>
+		
+	</div>
+	<div class = "clear"></div>
+
+<!-- 另一套 二维码 -->
+	<div class = "box2" id = "box2">
+		<div class = "close" id = "close"></div>
+		<div class = "main">
+			<div class = "title">小米账号账号登录</div>
+			<div class = "deta">请用最新版MIUI"我的小米"进行扫码登录</div>
+
+			<!-- 生成 的二维码 -->
+			<div class = "sys">
+				<!-- <iframe style="background:#fff;" src="/pass/lp?callback=http%3A%2F%2Forder.mi.com%2Flogin%2Fcallback%3Ffollowup%3Dhttp%253A%252F%252Fwww.mi.com%252F%26sign%3DNWU4MzRmNjBhZmU4MDRmNmZkYzVjMTZhMGVlMGFmMTllMGY0ZTNhZQ%2C%2C&amp;sid=mi_eshop&amp;_style=lite&amp;_qrsize=270" id="qriframe" frameborder="0" scrolling="no" height="270" width="270"></iframe> -->
+			</div>
+		</div>
+	</div>
+<!-- 页脚部分 -->
+	<footer id = "footer">
+		<div>
+			<a href="##">简体</a>
+			<a href="###">繁体</a>
+			<a href="###">English</a>
+			<a href="http://static.account.xiaomi.com/html/faq/zh_CN/faqList.html">常见问题</a>
+		</div>
+
+<!-- 		<ul>
+			<li>
+				<a href="##">简体</a>
+			</li>
+			<li>
+				<a href="###">繁体</a>
+			</li>
+			<li>
+				<a href="###">English</a>
+			</li>
+			<li>
+				<a href="http://static.account.xiaomi.com/html/faq/zh_CN/faqList.html">常见问题</a>
+			</li>
+		</ul>
+ -->		
+		<div class = "bottom">
+			小米公司版权所有-京ICP备1006444-<span></span>京公网安备11010802020134-京ICP证110507号
+		</div>
+
+	</footer>
+
+	<script type="text/javascript" src = "js/login.js"></script>
+</body>
+</html>
